@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useApp } from "../context/AppContext";
 import {
   LayoutDashboard,
@@ -23,6 +23,14 @@ export default function Sidebar() {
     transactions,
   } = useApp();
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [mobileOpen]);
 
   const navItems = [
     { id: "dashboard", label: "Overview", icon: LayoutDashboard },

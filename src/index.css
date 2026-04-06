@@ -971,7 +971,7 @@ body {
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.45);
-  z-index: 130;
+  z-index: 180;
 }
 
 /* ---- Responsive ---- */
@@ -994,7 +994,7 @@ body {
 
   .sidebar {
     transform: translateX(-100%);
-    z-index: 140;
+    z-index: 200;
     width: 260px;
     transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
   }
