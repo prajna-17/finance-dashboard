@@ -61,6 +61,7 @@ body,
 
 body {
   font-family: "DM Sans", sans-serif;
+  font-variant-numeric: tabular-nums;
   background: var(--bg);
   color: var(--text);
   font-size: 14px;
@@ -401,7 +402,7 @@ body {
 }
 
 .stat-value {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: -1px;
@@ -620,7 +621,7 @@ body {
 }
 
 .amount-cell {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-weight: 600;
   font-size: 14px;
 }
@@ -796,6 +797,8 @@ body {
 
 /* ---- Insights ---- */
 .insights-grid {
+  font-variant-numeric: tabular-nums;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
@@ -826,7 +829,9 @@ body {
 }
 
 .insight-value {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-variant-numeric: tabular-nums;
+
   font-size: 22px;
   font-weight: 700;
   color: var(--text);
@@ -849,6 +854,7 @@ body {
   margin-bottom: 5px;
   font-size: 13px;
   font-weight: 500;
+  font-variant-numeric: tabular-nums;
 }
 
 .bar-track {
