@@ -1136,7 +1136,8 @@ body {
 }
 
 .recent-amount {
-  font-family: "Syne", sans-serif;
+  font-family: "DM Sans", sans-serif;
+  font-variant-numeric: tabular-nums;
   font-weight: 700;
   font-size: 14px;
   flex-shrink: 0;
