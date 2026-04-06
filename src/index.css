@@ -67,12 +67,14 @@ body {
   font-size: 14px;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 .app-root {
   display: flex;
   min-height: 100vh;
   background: var(--bg);
+  width: 100%;
 }
 
 /* ---- Sidebar ---- */
@@ -281,6 +283,8 @@ body {
   padding: 32px;
   min-height: 100vh;
   animation: fadeUp 0.4s ease both;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 @keyframes fadeUp {
@@ -460,7 +464,9 @@ body {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .search-input {
@@ -522,11 +528,15 @@ body {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  overflow: hidden;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .txn-table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
 }
 
